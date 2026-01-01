@@ -58,6 +58,9 @@ The optimization process for erasing undesired visual concepts from pre-trained 
 <img src = 'images/ESD.png'>
 </div>
 
+## Downloading the official weights
+[ESD](https://huggingface.co/telcom/ESD_NSFW),  it’s the official nudity-erased SD v1.4 UNet checkpoint from https://erasing.baulab.info/weights/esd_models/NSFW/ and can be loaded via NSFW.pt") into a CompVis/stable-diffusion-v1-4 UNet. The weights here are a partial UNet state_dict (e.g. only a few attn2.to_k/to_v weights). So in loading it with PyTorch’s default strict=False is required.
+
 ## Generating Images
 
 Generating images from custom ESD model is super easy. Please follow `notebook/esd_inference_sdxl.ipynb` notebook
