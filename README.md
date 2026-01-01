@@ -17,6 +17,8 @@ We recently updated our codebase to be much more cleaner and faster. The setup i
 ```bash
 git clone https://github.com/rohitgandikota/erasing.git
 cd erasing
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
